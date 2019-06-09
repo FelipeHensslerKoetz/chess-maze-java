@@ -31,8 +31,8 @@ public class ChessPosition {
     }
 
     @Override
-    public String toString(){
-        return ""+column+row;
+    public String toString() {
+        return "" + column + row;
     }
 
 }

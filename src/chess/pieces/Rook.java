@@ -11,10 +11,14 @@ public class Rook extends ChessPiece {
     }
 
     @Override
-    public String toString(){
-        char rookUnicode = '\u2656';
-
-        return rookUnicode+"";
+    public String toString() {
+//        char rookUnicode;
+//        if(this.getColor() == Color.WHITE){
+//            rookUnicode = '\u2656';
+//        } else {
+//            rookUnicode = '\u265C';
+//        }
+        return "R";
     }
 
 

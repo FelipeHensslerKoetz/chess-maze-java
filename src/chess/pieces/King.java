@@ -10,8 +10,13 @@ public class King extends ChessPiece {
     }
 
     @Override
-    public String toString(){
-        char kingUnicode = '\u265A';
-        return kingUnicode+"";
+    public String toString() {
+//        char kingUnicode;
+//        if(this.getColor() == Color.WHITE){
+//            kingUnicode = '\u2654';
+//        } else {
+//            kingUnicode = '\u265A';
+//        }
+        return "K";
     }
 }
