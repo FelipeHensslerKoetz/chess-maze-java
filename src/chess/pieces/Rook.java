@@ -12,7 +12,9 @@ public class Rook extends ChessPiece {
 
     @Override
     public String toString(){
-        return "R";
+        char rookUnicode = '\u2656';
+
+        return rookUnicode+"";
     }
 
 

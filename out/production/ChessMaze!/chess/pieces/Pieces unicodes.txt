@@ -1,0 +1,17 @@
+UNICODE FOR TERMINAL 
+
+
+White king: 2654
+White queen: 2655
+White Rook: 2656
+White Bishop: 2657
+White Knight: 2658
+White Pawn: 2659
+
+-----------------
+Black king: 265A
+Black Queen: 265B
+Black Hook: 265C
+Black Bishop: 265D
+Black Night: 265E
+Black Pawn: 265F

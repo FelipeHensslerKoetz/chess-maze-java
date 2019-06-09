@@ -11,6 +11,7 @@ public class King extends ChessPiece {
 
     @Override
     public String toString(){
-        return "K";
+        char kingUnicode = '\u265A';
+        return kingUnicode+"";
     }
 }
