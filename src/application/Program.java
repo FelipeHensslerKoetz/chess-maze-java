@@ -1,5 +1,6 @@
 package application;
 
+import GUI.Table;
 import chess.ChessException;
 import chess.ChessMatch;
 import chess.ChessPiece;
@@ -17,6 +18,7 @@ public class Program {
         ChessMatch chessMatch = new ChessMatch();
         List<ChessPiece> captured = new ArrayList<>();
 
+        Table table = new Table();
         while (!chessMatch.getCheckMate()) {
             try {
                 UI.clearSceen();
