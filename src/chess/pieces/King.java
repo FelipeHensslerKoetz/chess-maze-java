@@ -5,6 +5,7 @@ import boardgame.Position;
 import chess.ChessMatch;
 import chess.ChessPiece;
 import chess.Color;
+import chess.ChessMatch;
 
 public class King extends ChessPiece {
 
@@ -96,7 +97,7 @@ public class King extends ChessPiece {
             if(testRookCastling(posT1)){
                 Position p1 = new Position(position.getRow(),position.getColumn()+1);
                 Position p2 = new Position(position.getRow(),position.getColumn()+2);
-                if(getBoard().piece(p1) == null && getBoard().piece(p2) == null){
+                if(getBoard().piece(p1) == null && getBoard().piece(p2) == null && !chessMatch.testAttackOnTile(p1) && !chessMatch.testAttackOnTile(p2)){ // Testa ataque nas casas vazias
                     mat[position.getRow()][position.getColumn()+2] = true;
                 }
             }
@@ -106,13 +107,12 @@ public class King extends ChessPiece {
                 Position p1 = new Position(position.getRow(),position.getColumn()-1);
                 Position p2 = new Position(position.getRow(),position.getColumn()-2);
                 Position p3 = new Position(position.getRow(),position.getColumn()-3);
-                if(getBoard().piece(p1) == null && getBoard().piece(p2) == null && getBoard().piece(p3) == null){
+                if(getBoard().piece(p1) == null && getBoard().piece(p2) == null && getBoard().piece(p3) == null &&
+                !chessMatch.testAttackOnTile(p1) && !chessMatch.testAttackOnTile(p2) && !chessMatch.testAttackOnTile(p3)){ // Testa atquare nas casas intermediarias
                     mat[position.getRow()][position.getColumn()-2] = true;
                 }
             }
         }
-
-
         return mat;
     }
 }
